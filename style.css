@@ -8,9 +8,9 @@
 
 :root {
   --primary-color-dark: black; 
-  --secondary-color: #0800D7; 
-
+  --secondary-color: #0900FF; 
   --color-white: white; 
+  --bg-color-ad: #D2D1FF;
   --padding-between-sections: 15px;
 
 }
@@ -22,8 +22,68 @@
 
 .article__h3{
   color:var(--secondary-color);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.heading__h4 {
+  font-weight: 300;
   font-size: 24px;
+}
+
+.heading__h5 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.support__h4 {
+  font-family: 'Jersey 10', 'Roboto';
+  color:var(--secondary-color);
+  text-align:center;
+}
+
+.btn {
+  background: none;
+  cursor:pointer;
+  border: none;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-main-blue {
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.btn-main-blue:hover{
+  background-color: var(--bg-color-ad);
+}
+
+.btn_white{
+  border: 2px solid var(--color-white);
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.btn_white:hover{
+  background-color: var(--bg-color-ad);
+  color: var(--secondary-color);
+  border-color: var(--bg-color-ad);
+
+}
+
+.paragraph {
+  font-size:16px;
 }
 /* header */
 
@@ -34,7 +94,7 @@
 
 }
 #logo {
-font-family: 'Jersey 10';
+font-family: 'Jersey 10', 'Roboto';
 font-size: 35px;
 color: white;
 font-weight: 500;
@@ -49,8 +109,7 @@ text-align: center;
 }
 
 .button-header{
-  background: none;
-  border: none;
+
   width: 50px;
   
 }
@@ -65,7 +124,7 @@ text-align: center;
 
 /* MAIN */
 #main {
-  padding: 0 10px;
+  padding: 0 25px;
 }
 
 .main__h2 {
@@ -84,7 +143,7 @@ text-align: center;
 }
 .article__link {
   text-decoration: none;
-  color: black;
+  color: var(--primary-color-dark);
   gap: 0.5rem; 
 }
 .article__img {
@@ -93,15 +152,28 @@ text-align: center;
 }
 .article__text {
   margin: 10px 0;
+  font-size: 16px;
 }
 .article__date {
   font-style: italic;
 }
+
+.author__date {
+  text-align: end;
+}
+
+.author a {
+  color: var(--secondary-color);
+  font-style: normal;
+}
+
 .grid {
+  padding: var(--padding-between-sections) 0;
   display: grid;
   gap: 2rem; 
   grid-template-columns: 1fr; 
 }
+
 
 @media (min-width: 600px) {
   .grid {
@@ -115,4 +187,139 @@ text-align: center;
   grid-template-columns: repeat(3, minmax(200px, 1fr)); 
 
   }
+}
+
+.line{
+  height:1px;
+  border-width:0;
+  margin: var(--padding-between-sections) 0;
+}
+.main-blue__line {
+  color:var(--secondary-color);
+  background-color:var(--secondary-color);
+
+}
+
+.white__line {
+  color: white;
+  background-color:white;
+  width:100%;
+
+}
+/* support section */
+
+.main-support__ad {
+  padding: 10px 20px;
+  margin:  var(--padding-between-sections) 0;
+  background-color: var(--bg-color-ad);
+  border-radius: 70px;
+
+}
+
+.support-ad__content {
+  display:flex;
+  justify-content: space-between;
+  padding:15px 20px;
+  gap: 15px;
+
+}
+
+.ad-content__box {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.ad-content__p {
+  font-weight: 500;
+}
+
+.ad-content__thanks {
+  text-align:center;
+  font-size:10px;
+}
+
+.ad-content__btn:hover {
+  background-color: white;
+
+}
+
+/* footer */
+
+#footer-section {
+  display:flex;
+  flex-direction:column;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items:start;
+  background-color: var(--secondary-color);
+  padding: 20px 15px;
+
+}
+
+#footer-section .footer-logo{
+  font-size: 70px;
+
+}
+.box-logo {
+  align-self:center;
+}
+
+
+.link-footer {
+  color: white;
+}
+
+
+.nav-footer {
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social__footer {
+  max-width: 50px;
+}
+.social-logos {
+  display:flex;
+  gap: 30px;
+  margin-top: 15px;
+
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.list__item {
+
+  list-style-type: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.socials__h5, .copyright__h5 {
+  color: white;
+  font-family: 'Jersey 10', 'Roboto';
+
+}
+
+.footer__copyright{
+  width: 100%;
+  text-align: center;
+
+}
+.copyright__h2 {
+  color: white;
+  font-family: 'Jersey 10', 'Roboto';
+  margin-bottom: 15px;
 }
