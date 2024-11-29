@@ -20,9 +20,8 @@
   font-size: 32px;
 }
 
-.article__h3{
-  color:var(--secondary-color);
-  font-weight: 600;
+.heading__h3{
+  font-weight: 500;
   font-size: 26px;
 }
 
@@ -131,28 +130,31 @@ text-align: center;
   text-align: center;
 }
 
-.article__grid {
-  max-width: 600px;
-  margin: 0 auto;
-  width: 100%; 
-  height: auto;
-
-}
 .article__h3 {
   margin-top: 10px;
+  color:var(--secondary-color);
+
 }
+
 .article__link {
   text-decoration: none;
   color: var(--primary-color-dark);
   gap: 0.5rem; 
 }
+
 .article__img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
+
 .article__text {
   margin: 10px 0;
-  font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; 
+  -webkit-box-orient: vertical;
 }
 
 .categories-author__date{
@@ -179,6 +181,8 @@ text-align: center;
   font-style: normal;
 }
 
+
+
 .grid {
   padding: var(--padding-between-sections) 0;
   display: grid;
@@ -187,18 +191,62 @@ text-align: center;
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .grid {
     grid-template-columns: repeat(2, minmax(200px, 1fr)); 
   
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .grid {
   grid-template-columns: repeat(3, minmax(200px, 1fr)); 
 
   }
+}
+
+@media (min-width: 1200px) {
+  #main, .navigation-bar, .footer-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .article__grid {
+    display: flex;
+    gap: 50px;
+
+  }
+  .article__img {
+    width: 500px;
+    height: 100%;
+  } 
+
+  .article__text {
+    -webkit-line-clamp: 14;
+    line-clamp: 14; 
+  }  
+
+  .article__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5px;
+    
+  }
+
+  .article__h3 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #main, .navigation-bar, .footer-wrapper {
+    max-width: 1300px;
+
+  }
+
+  .article__img {
+    width: 600px;
+  } 
 }
 
 .line{
@@ -259,17 +307,20 @@ text-align: center;
 /* footer */
 
 #footer-section {
+
+  background-color: var(--secondary-color);
+  padding: 20px 15px;
+
+}
+.footer-wrapper {
   display:flex;
   flex-direction:column;
   margin-top: 40px;
   justify-content: space-evenly;
   align-items:start;
-  background-color: var(--secondary-color);
-  padding: 20px 15px;
-
 }
 
-#footer-section .footer-logo{
+#logo.footer-logo{
   font-size: 70px;
 
 }

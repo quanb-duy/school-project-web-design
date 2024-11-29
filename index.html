@@ -37,21 +37,24 @@
       <section class="grid">
 
         <article class="article__grid">
-          <a href="#" class="article__link"
-            ><img
+          <a href="#" class="article__link"><img
               class="article__img"
               src="./img/technologie-meni.png"
               alt="racek"
             />
-            <h3 class="article__h3">
-              Jak technologie mění politické strategie
-            </h3>
-            <p class="article__text paragraph">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin
-              mattis lacinia justo. Nullam sit amet magna in magna gravida
-              vehicula. Aenean placerat.
-            </p>
           </a>
+
+            <div class="article__wrapper">
+              <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+              Jak technologie mění politické strategie
+            </h3></a>
+            <p class="article__text paragraph">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+            </p>
+          </div>
           <div class="categories-author__date">
             <div class="article__categories">
               <div>
@@ -60,6 +63,7 @@
             <div>
               <button class="btn btn-main-blue  article__category">Sport</button>
             </div>
+
             </div>
             <div class="author__date">
               <address class="author">
@@ -70,7 +74,7 @@
               </time>
             </div>
           </div>
-
+        </div>
         </article>
         <article class="article__grid">
           <a href="#" class="article__link"
@@ -127,28 +131,32 @@
         <section class="grid">
 
           <article class="article__grid">
-            <a href="#" class="article__link"
-              ><img
-                class="article__img"
-                src="./img/technologie-meni.png"
-                alt="racek"
-              />
-              <h3 class="article__h3">
+            <a href="#" class="article__link">
+              <img
+              class="article__img"
+              src="./img/technologie-meni.png"
+              alt="racek"
+            />
+            </a>
+
+            <div class="article__wrapper">
+              <a href="#" class="article__link"><h3 class="article__h3">
                 Jak technologie mění politické strategie
-              </h3>
+              </h3></a>
               <p class="article__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin
                 mattis lacinia justo. Nullam sit amet magna in magna gravida
                 vehicula. Aenean placerat.
               </p>
-            </a>
-            <div class="author__date">
-              <address class="author">
-                <a href="/author/john-doe" rel="author">Michal Starý</a>
-              </address>
-              <time pubdate datetime="2024-04-30" class="article__date">
-                20. května 2024
-              </time>
+            
+              <div class="author__date">
+                <address class="author">
+                  <a href="/author/john-doe" rel="author">Michal Starý</a>
+                </address>
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time>
+              </div>
             </div>
           </article>
           <article class="article__grid">
@@ -195,74 +203,75 @@
         
     </main>
     <footer id="footer-section">
-      <div class="footer-box box-logo">
-        <a href="./" id="logo" class="footer-logo">AZUROVÉ PRÁVO</a>
-      </div>
+      <div class="footer-wrapper">
+        <div class="footer-box box-logo">
+          <a href="./" id="logo" class="footer-logo">AZUROVÉ PRÁVO</a>
+        </div>
 
-      <hr class="white__line line">
+        <hr class="white__line line">
 
-      <div class="footer-box">
-        <ul class="nav-footer">
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Předplatné</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">O nás</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Kontakty</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Politika</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Klimatická krize</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Kultura</a>
-          </li>
-          <li class="list__item">
-            <a class="nav__link link-footer" href="#">Sport</a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer-box">
+          <ul class="nav-footer">
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Předplatné</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">O nás</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Kontakty</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Politika</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Klimatická krize</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Kultura</a>
+            </li>
+            <li class="list__item">
+              <a class="nav__link link-footer" href="#">Sport</a>
+            </li>
+          </ul>
+        </div>
 
-      <hr class="white__line line">
+        <hr class="white__line line">
 
-      <div class="socials footer-box">
-        <div class="socials_address">
-          <h5 class="heading__h5 socials__h5">Azurové právo <br>
-            Kamýcká 129<br>
-            165 21 Praha - Suchdol</h5>
-        <div class="social-logos">
+        <div class="socials footer-box">
+          <div class="socials_address">
+            <h5 class="heading__h5 socials__h5">Azurové právo <br>
+              Kamýcká 129<br>
+              165 21 Praha - Suchdol</h5>
+          <div class="social-logos">
 
-            <a href="#">
-              <img class="social__footer" src="./icons/instagram.svg" alt="instagram"/>
-            </a>
-            <a href="#"
-              ><img class="social__footer" src="./icons/facebook.svg" alt="facebook"
-            /></a>
-            <a href="#"
-              ><img class="social__footer" src="./icons/youtube.svg" alt="youtube"
-            /></a>
+              <a href="#">
+                <img class="social__footer" src="./icons/instagram.svg" alt="instagram"/>
+              </a>
+              <a href="#"
+                ><img class="social__footer" src="./icons/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img class="social__footer" src="./icons/youtube.svg" alt="youtube"
+              /></a>
+            </div>
+          </div>
+          <div class="subscribe__btn">
+            <button class="btn btn_white">Přihlášení k odběru</button>
           </div>
         </div>
-        <div class="subscribe__btn">
-          <button class="btn btn_white">Přihlášení k odběru</button>
+
+        <hr class="white__line line">
+
+        <div class="footer__copyright">
+          <h2 class="heading__h2 copyright__h2">
+            Jedná se o studentský projekt
+          </h2>
+          
+          <h5 class="heading__h5 copyright__h5">Copyright © 2024 Azurové Právo  
+            <br>Bui Duy Quan | Václav Bárta | Tomáš Kubát | Adam Rohlíček</h5>
         </div>
       </div>
-
-      <hr class="white__line line">
-
-      <div class="footer__copyright">
-        <h2 class="heading__h2 copyright__h2">
-          Jedná se o studentský projekt
-        </h2>
-        
-        <h5 class="heading__h5 copyright__h5">Copyright © 2024 Azurové Právo  
-          <br>Bui Duy Quan | Václav Bárta | Tomáš Kubát | Adam Rohlíček</h5>
-      </div>
-
     </footer>
   </body>
 </html>
