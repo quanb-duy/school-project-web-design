@@ -129,7 +129,7 @@ a {
 /* header */
 
 #header {
-  max-height: 90px;
+  min-height: 90px;
   background-color: var(--secondary-color);
   margin-bottom: 20px;
 
@@ -160,6 +160,78 @@ text-align: center;
 .icon__search {
   transform: scale(70%);
 }
+/* HAMBURGER MENU */
+
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* place it over the hamburger */
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #ededed;
+  list-style-type: none;
+  transform: translate(-100%, 0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ span {
+  background: #232323;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: translate(0, 0);
+}
+
 
 /* MAIN */
 #main {
@@ -438,12 +510,13 @@ text-align: center;
 
   .grid__complex {
     grid-template-columns: repeat(3, minmax(200px, 1fr)); 
-    gap: 30px;
+    gap: 25px;
     }
   
   .grid__complex .article__img {
     width: 100%;
     height: 170px;
+    margin-bottom: 5px;
 
 
   } 
@@ -453,7 +526,7 @@ text-align: center;
     -webkit-line-clamp: 2;
     line-clamp: 2; 
   }
-  
+
   .grid__complex .article__text, .grid__complex .categories-author__date  {
     display:none;
   }
@@ -479,7 +552,6 @@ text-align: center;
 
   .article__1x2 .article__link {
     flex:1;
-
   }
 
   .article__2x1 .article__img {
@@ -550,7 +622,7 @@ text-align: center;
   }
 
 
-  .article__img {
+  .grid__easy .article__img {
     width: 450px;
     height: 337.5px;
   } 
@@ -561,3 +633,13 @@ text-align: center;
 
   }  
 }
+
+/* @media (max-width: 1199px) {
+  .header__nav {
+    display: none;
+
+  }
+
+
+  
+} */

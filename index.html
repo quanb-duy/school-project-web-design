@@ -15,22 +15,80 @@
   <body id="body">
     <header id="header">
       <div class="navigation-bar">
-        <button class="hamburger-menu button-header btn">
-          <img
-            src="./icons/hamburger-icon.svg"
-            class="icon-header icon__hamburger"
-            alt="hamburger-icon"
-          />
-        </button>
+        <div class="navigation">
 
+        
+          <div id="menuToggle">
+            <input type="checkbox" id="menuCheckbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu" class="nav-header">
+              
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Politika</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Klimatická krize</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Kultura</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Sport</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">O nás</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Předplatné</a>
+                </li>
+                <li class="list__item">
+                  <a class="nav__link nav__header" href="#">Kontakty</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+        <!-- STOP -->
+          <!-- Navigation Menu -->
+          <nav class="header__nav">
+            <ul id="menu" class="nav-header">
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Politika</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Klimatická krize</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Kultura</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Sport</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">O nás</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Předplatné</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Kontakty</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div>
-          <h1 class="heading__h1 logo__h1"><a href="./" id="logo">AZUROVÉ PRÁVO</a></h1>
+          <h1 class="heading__h1 logo__h1">
+            <a href="./" id="logo">AZUROVÉ PRÁVO</a>
+          </h1>
         </div>
         <button class="search-btn button-header btn">
-          <img src="./icons/lupa.svg" class="icon-header icon__search" alt="lupa"/>
+          <img src="./icons/lupa.svg" class="icon-header icon__search" alt="lupa" />
         </button>
       </div>
-    </header>
+    </header>    
     <main id="main">
       <h2 class="heading__h2 main__h2">Nejčtenější články</h2>
 
@@ -531,7 +589,7 @@
 
         <hr class="white__line line">
 
-        <div class="footer-box footer__nav">
+        <nav class="footer-box footer__nav">
           <ul class="nav-footer">
             <li class="list__item">
               <a class="nav__link link-footer" href="#">Předplatné</a>
@@ -555,7 +613,7 @@
               <a class="nav__link link-footer" href="#">Sport</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <hr class="white__line line">
 
