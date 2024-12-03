@@ -112,7 +112,7 @@ a {
   }
   
   .heading__h3{
-    font-weight: 500;
+    font-weight:700;
     font-size: 28px;
   }
   
@@ -269,10 +269,14 @@ text-align: center;
 
 }
 
+.article__link:hover {
+  text-decoration: underline;
+}
+
 .article__link {
   text-decoration: none;
   color: var(--primary-color-dark);
-  gap: 0.5rem; 
+
 }
 
 .article__img {
