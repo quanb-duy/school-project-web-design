@@ -73,7 +73,8 @@ a {
 }
 
 .btn-main-blue:hover{
-  background-color: var(--bg-color-ad);
+  background-color: var(--secondary-color);
+  color: var(--color-white);
 }
 
 .btn_white{
@@ -124,7 +125,7 @@ a {
   
   .heading__h5 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .paragraph {
@@ -190,7 +191,8 @@ text-align: center;
 }
 
 #menuToggle .nav__link:hover {
-  background-color: var(--color-white);
+  background-color: var(--secondary-color);
+  color: var(--color-white);
 
 }
 
@@ -366,7 +368,8 @@ text-align: center;
 
 
 .ad-content__btn:hover {
-  background-color: white;
+  background-color: var(--secondary-color);
+  color: var(--color-white);
 
 }
 
@@ -445,7 +448,7 @@ text-align: center;
   text-align: center;
 
 }
-.copyright__h3 {
+.copyright__h4 {
   color: white;
   margin-bottom: 15px;
 }
