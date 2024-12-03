@@ -43,20 +43,22 @@
   font-size: 22px;
 }
 
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+}
 .support__h4 {
   font-family: 'Jersey 10', 'Roboto';
   color:var(--secondary-color);
   text-align:center;
   font-weight: bolder;
-
-
+  margin-top: 10px;
 }
 
 .btn {
   background: none;
   cursor:pointer;
   border: none;
-  
 }
 
 a {
@@ -80,7 +82,7 @@ a {
 .btn_white{
   border: 2px solid var(--color-white);
   border-radius: 15px;
-  padding: 3px 10px;
+  padding: 5px 25px;
   font-size: 16px;
   font-weight: 800;
   color: var(--color-white);
@@ -169,7 +171,7 @@ text-align: center;
 .nav__link {
   text-decoration: none;
   border-radius: 20px;
-  padding: 3px 10px;
+  padding: 5px 30px;
   font-weight: 600;
 
 }
@@ -235,7 +237,7 @@ text-align: center;
 
 #menu .list__item {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 5px;
 
 }
@@ -256,6 +258,9 @@ text-align: center;
 
 .main__h2 {
   text-align: center;
+  background-color: var(--bg-color-ad);
+  padding: 5px 0;
+
 }
 
 .article__h3 {
@@ -339,7 +344,7 @@ text-align: center;
   padding: 10px 20px;
   margin:  0 auto;
   background-color: var(--bg-color-ad);
-  border-radius: 70px;
+  border-radius: 80px;
 
 }
 
@@ -436,12 +441,14 @@ text-align: center;
   list-style-type: none;
 }
 
-
-
-.socials__h5, .copyright__h5 {
+.nav-footer .list__item{
+  margin-top: 3px;
+}
+.socials__h5, .copyright {
   color: white;
 
 }
+
 
 .footer__copyright{
   width: 100%;
@@ -627,6 +634,11 @@ text-align: center;
 
   .socials_address {
     margin-bottom: 30px;
+  }
+
+  .ad-content__thanks {
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 }
 
