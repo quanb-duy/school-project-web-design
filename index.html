@@ -55,8 +55,10 @@
           </h1>
         </div>
         <div class="search_header">
-          <input type="text" id="text" class="search__field" />
-          <button class="search-btn button-header btn">
+          <form action="./" method="get" id="search-form">
+          <input type="text" placeholder="Vyhledej..." id="text" class="search__field" />
+          </form>
+          <button type="submit" form="search-form" value="Submit" class="search-btn button-header btn">
             <img
               src="./icons/lupa.svg"
               class="icon-header icon__search"

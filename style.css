@@ -171,12 +171,21 @@ text-align: center;
 }
 .search_header {
   flex:1;
-
-  display: flex;
   justify-content: end;
+  display: flex;          
+  align-items: center;   
 }
+
 .logo_header {
   flex:2;
+}
+
+.search__field {
+  flex: 1;
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 30px;
+  border: none;
 }
 
 .button-header{
@@ -222,7 +231,7 @@ text-align: center;
 
 #menuToggle .hamburger__checkbox {
   display: block;
-  width: 40px;
+  width: 32px;
   height: 32px;
   position: absolute;
   opacity: 0; 
@@ -232,12 +241,11 @@ text-align: center;
 
 #menuToggle .hamburger__icon {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 30px;
+  height: 6px;
   margin-top: 5px;
   position: relative;
   background: var(--color-white);
-  border-radius: 3px;
   z-index: 1;
 }
 
@@ -246,7 +254,7 @@ text-align: center;
   max-width: 400px;
   width: 100vw;
   height: 100vh;
-  margin: -56px 0 0 -50px;
+  margin: -58px 0 0 -50px;
   padding: 50px;
   padding-top: 85px;
   box-sizing: border-box;
@@ -297,6 +305,7 @@ text-align: center;
 
 .article__link:hover {
   text-decoration: underline;
+  color:var(--secondary-color);
 }
 
 .article__link {
@@ -452,9 +461,9 @@ text-align: center;
 }
 
 .link-footer:hover {
-  background-color: var(--bg-color-ad);
+  background-color: var(--color-white);
   color: var(--secondary-color);
-  border-color: var(--bg-color-ad);
+  border-color: var(--color-white);
 }
 
 .nav-footer {
