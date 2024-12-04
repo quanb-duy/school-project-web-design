@@ -7,560 +7,1206 @@
     <title>Azurové Právo</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-
   </head>
   <body id="body">
     <header id="header">
       <div class="navigation-bar">
         <nav class="navigation">
           <div id="menuToggle">
-            <input type="checkbox" id="menuCheckbox" class="hamburger__checkbox" />
+            <input
+              type="checkbox"
+              id="menuCheckbox"
+              class="hamburger__checkbox"
+            />
 
             <span class="hamburger__icon"></span>
             <span class="hamburger__icon"></span>
             <span class="hamburger__icon"></span>
-            
-  
+
             <ul id="menu" class="nav-header">
-              
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Politika</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Klimatická krize</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Kultura</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Sport</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">O nás</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Předplatné</a>
-                </li>
-                <li class="list__item">
-                  <a class="nav__link nav__header" href="#">Kontakty</a>
-                </li>
-              </ul>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Politika</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Klimatická krize</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Kultura</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Sport</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">O nás</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Předplatné</a>
+              </li>
+              <li class="list__item">
+                <a class="nav__link nav__header" href="#">Kontakty</a>
+              </li>
+            </ul>
           </div>
         </nav>
 
-        <div>
+        <div class="logo_header">
           <h1 class="heading__h1 logo__h1">
             <a href="./" id="logo">AZUROVÉ PRÁVO</a>
           </h1>
         </div>
-        <button class="search-btn button-header btn">
-          <img src="./icons/lupa.svg" class="icon-header icon__search" alt="lupa" />
+        <div class="search_header">
+          <input type="text" id="text" class="search__field" />
+          <button class="search-btn button-header btn">
+            <img
+              src="./icons/lupa.svg"
+              class="icon-header icon__search"
+              alt="lupa"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+
+      <div class="all-categories">
+        <button class="btn btn-main-blue btn-large">
+          Politika
+        </button>
+        <button class="btn btn-main-blue btn-large">
+          Klimatická krize
+        </button>
+        <button class="btn btn-main-blue btn-large">
+          Kultura
+        </button>
+        <button class="btn btn-main-blue btn-large">
+          Sport
         </button>
       </div>
-    </header>    
-    <main id="main">
+
       <h2 class="heading__h2 main__h2">Nejčtenější články</h2>
 
       <section class="grid grid__easy">
-
         <article class="article__grid">
-          <a href="#" class="article__link"><img
+          <a href="#" class="article__link"
+            ><img
               class="article__img"
               src="https://picsum.photos/300/300?random=2"
               alt="racek"
             />
           </a>
 
-            <div class="article__wrapper">
-              <div>
+          <div class="article__wrapper">
+            <div>
               <a href="#" class="article__link">
                 <h3 class="heading__h3 article__h3">
-              Jak technologie mění politické strategie
-            </h3></a>
-            <p class="article__text paragraph">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
-            </p>
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
           </div>
-          <div class="categories-author__date">
-            <div class="article__categories">
-              <div>
-                <button class="btn btn-main-blue article__category">Politika</button>
-            </div>
-            <div>
-              <button class="btn btn-main-blue  article__category">Sport</button>
-            </div>
-
-            </div>
-            <div class="author__date">
-              <address class="author">
-                <a href="/author/john-doe" rel="author">Michal Starý</a>
-              </address>
-              <time pubdate datetime="2024-04-30" class="article__date">
-                20. května 2024
-              </time>
-            </div>
-          </div>
-        </div>
         </article>
         <article class="article__grid">
-          <a href="#" class="article__link"><img
+          <a href="#" class="article__link"
+            ><img
               class="article__img"
               src="https://picsum.photos/300/300?random=2"
               alt="racek"
             />
           </a>
 
-            <div class="article__wrapper">
-              <div>
+          <div class="article__wrapper">
+            <div>
               <a href="#" class="article__link">
                 <h3 class="heading__h3 article__h3">
-              Jak technologie mění politické strategie
-            </h3></a>
-            <p class="article__text paragraph">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
-            </p>
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
           </div>
-          <div class="categories-author__date">
-            <div class="article__categories">
-              <div>
-                <button class="btn btn-main-blue article__category">Politika</button>
-            </div>
-            <div>
-              <button class="btn btn-main-blue  article__category">Sport</button>
-            </div>
-
-            </div>
-            <div class="author__date">
-              <address class="author">
-                <a href="/author/john-doe" rel="author">Michal Starý</a>
-              </address>
-              <time pubdate datetime="2024-04-30" class="article__date">
-                20. května 2024
-              </time>
-            </div>
-          </div>
-        </div>
         </article>
-        
       </section>
-        <hr class="main-blue__line line">
+      <hr class="main-blue__line line" />
 
-        <aside class="main-support__ad">
-          <h4 class="heading__h4 support__h4">Podpořte nezávislou žurnalistiku</h4>
-          <div class="support-ad__content">
-
-              <p class="ad-content__p paragraph">
-                Investujte do kvalitní žurnalistiky a objevte pravdu bez kompromisů. Staňte se součástí boje za svobodné a odpovědné noviny.
-              </p>
-              <div class="ad-content__box">
-                <button class="btn ad-content__btn btn-main-blue">
-                  Předplatit
-                </button>
-              </div>
-
-
+      <aside class="main-support__ad">
+        <h4 class="heading__h4 support__h4">
+          Podpořte nezávislou žurnalistiku
+        </h4>
+        <div class="support-ad__content">
+          <p class="ad-content__p paragraph">
+            Investujte do kvalitní žurnalistiky a objevte pravdu bez kompromisů.
+            Staňte se součástí boje za svobodné a odpovědné noviny.
+          </p>
+          <div class="ad-content__box">
+            <button class="btn ad-content__btn btn-main-blue btn-large">
+              Předplatit
+            </button>
           </div>
-          <p class="ad-content__thanks">Děkujeme, Váš tým Azurového práva</p>
-        </aside>
+        </div>
+        <p class="ad-content__thanks">Děkujeme, Váš tým Azurového práva</p>
+      </aside>
 
-        <hr class="main-blue__line line">
+      <hr class="main-blue__line line" />
 
-        <!-- NEJNOVEJSI CLANKY -->
+      <!-- NEJNOVEJSI CLANKY -->
 
-        <h2 class="heading__h2 main__h2">Nejnovější články</h2>
+      <h2 class="heading__h2 main__h2">Nejnovější články</h2>
 
-        <section class="grid grid__complex">
+      <section class="grid grid__complex">
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
 
-
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
-          
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        </article>
+
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex article__2x1">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex article__2x1">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex article__1x2">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex article__1x2">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">Jak technologie</h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex article__2x1">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex article__2x1">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
 
-          <article class="article__grid article__complex">
-            <a href="#" class="article__link"><img
-                class="article__img"
-                src="https://picsum.photos/300/300?random=2"
-                alt="racek"
-              />
-            </a>
-  
-              <div class="article__wrapper">
-                <div>
-                <a href="#" class="article__link">
-                  <h3 class="heading__h3 article__h3">
-                Jak technologie mění politické strategie
-              </h3></a>
+        <article class="article__grid article__complex">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
               <p class="article__text paragraph">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Sed convallis magna eu sem. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc, commodo 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
             </div>
             <div class="categories-author__date">
               <div class="article__categories">
                 <div>
-                  <button class="btn btn-main-blue article__category">Politika</button>
-              </div>
-              <div>
-                <button class="btn btn-main-blue  article__category">Sport</button>
-              </div>
-  
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
               </div>
               <div class="author__date">
-                <address class="author">
-                  <a href="/author/john-doe" rel="author">Michal Starý</a>
-                </address>
+                
                 <time pubdate datetime="2024-04-30" class="article__date">
                   20. května 2024
-                </time>
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
               </div>
             </div>
           </div>
-          </article>
+        </article>
+      </section>
 
-        </section>
+      <hr class="main-blue__line line" />
 
-        <hr class="main-blue__line line">
+      <!-- jednotlivy kategorie -->
+      <h2 class="heading__h2 main__h2">Politika</h2>
 
-        <!-- jednotlivy kategorie -->
+      <section class="grid grid__easy grid__categories">
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
 
-        <aside class="main-support__ad">
-          <h4 class="heading__h4 support__h4">AKCE: Setkání předplatitelů</h4>
-          <div class="support-ad__content">
-
-              <p class="ad-content__p paragraph">
-                Sed convallis magna eu sem. Fusce consectetuer risus a nunc. Quisque tincidunt scelerisque libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla est. Vivamus luctus egestas leo. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nunc auctor. Mauris metus. Aliquam erat volutpat.
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
               </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
           </div>
+        </article>
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
 
-        </aside>
-        
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="show-more__btn">
+        <button class="btn btn-main-blue btn-large btn-category">
+          Zobrazit více
+        </button>
+      </div>
+
+      <hr class="main-blue__line line" />
+
+      <h2 class="heading__h2 main__h2">Klimatická krize</h2>
+
+      <section class="grid grid__easy grid__categories">
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="show-more__btn">
+        <button class="btn btn-main-blue btn-large btn-category">
+          Zobrazit více
+        </button>
+      </div>
+
+      <hr class="main-blue__line line" />
+
+      <h2 class="heading__h2 main__h2">Kultura</h2>
+
+      <section class="grid grid__easy grid__categories">
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="show-more__btn">
+        <button class="btn btn-main-blue btn-large btn-category">
+          Zobrazit více
+        </button>
+      </div>
+
+      <hr class="main-blue__line line" />
+
+      <h2 class="heading__h2 main__h2">Sport</h2>
+
+      <section class="grid grid__easy grid__categories">
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="article__grid">
+          <a href="#" class="article__link"
+            ><img
+              class="article__img"
+              src="https://picsum.photos/300/300?random=2"
+              alt="racek"
+            />
+          </a>
+
+          <div class="article__wrapper">
+            <div>
+              <a href="#" class="article__link">
+                <h3 class="heading__h3 article__h3">
+                  Jak technologie mění politické strategie
+                </h3></a
+              >
+              <p class="article__text paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+                dapibus tortor vel mi dapibus sollicitudin. Etiam commodo dui
+                eget wisi. Duis sapien nunc, commodo et, interdum suscipit,
+                sollicitudin et, dolor. Sed convallis magna eu sem. Integer
+                vulputate sem a nibh rutrum consequat. In laoreet, magna id
+                viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien
+                wisi sed libero.Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Etiam commodo dui eget wisi. Duis sapien nunc,
+                commodo
+              </p>
+            </div>
+            <div class="categories-author__date">
+              <div class="article__categories">
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Politika
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-main-blue article__category">
+                    Sport
+                  </button>
+                </div>
+              </div>
+              <div class="author__date">
+                
+                <time pubdate datetime="2024-04-30" class="article__date">
+                  20. května 2024
+                </time><address class="author">
+                  <a href="./" rel="author">Michal Starý</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="show-more__btn">
+        <button class="btn btn-main-blue btn-large btn-category">
+          Zobrazit více
+        </button>
+      </div>
+
+      <hr class="main-blue__line line" />
+
+      <aside class="main-support__ad">
+        <h4 class="heading__h4 support__h4">AKCE: Setkání předplatitelů</h4>
+        <div class="support-ad__content">
+          <p class="ad-content__p paragraph">
+            Sed convallis magna eu sem. Fusce consectetuer risus a nunc. Quisque
+            tincidunt scelerisque libero. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos hymenaeos. Nulla est.
+            Vivamus luctus egestas leo. Etiam dui sem, fermentum vitae, sagittis
+            id, malesuada in, quam. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos hymenaeos. Nunc auctor.
+            Mauris metus. Aliquam erat volutpat.
+          </p>
+        </div>
+      </aside>
     </main>
     <footer id="footer-section">
       <div class="footer-wrapper">
         <div class="footer-box box-logo">
-          <h1 class="heading__h1 footer-logo"><a href="./" id="logo">AZUROVÉ PRÁVO</a></h1>
+          <h1 class="heading__h1 footer-logo">
+            <a href="./" id="logo">AZUROVÉ PRÁVO</a>
+          </h1>
         </div>
 
-        <hr class="white__line line">
+        <hr class="white__line line" />
 
         <nav class="footer-box footer__nav">
           <ul class="nav-footer">
-
             <li class="list__item">
               <a class="nav__link link-footer" href="#">O nás</a>
             </li>
@@ -582,23 +1228,34 @@
           </ul>
         </nav>
 
-        <hr class="white__line line">
+        <hr class="white__line line" />
 
         <div class="socials footer-box">
           <div class="socials_address">
-            <h5 class="heading__h5 socials__h5">Azurové právo <br>
-              Kamýcká 129<br>
-              165 21 Praha - Suchdol</h5>
-          <div class="social-logos">
-
+            <h5 class="heading__h5 socials__h5">
+              Azurové právo <br />
+              Kamýcká 129<br />
+              165 21 Praha - Suchdol
+            </h5>
+            <div class="social-logos">
               <a href="#">
-                <img class="social__footer" src="./icons/instagram.svg" alt="instagram"/>
+                <img
+                  class="social__footer"
+                  src="./icons/instagram.svg"
+                  alt="instagram"
+                />
               </a>
               <a href="#"
-                ><img class="social__footer" src="./icons/facebook.svg" alt="facebook"
+                ><img
+                  class="social__footer"
+                  src="./icons/facebook.svg"
+                  alt="facebook"
               /></a>
               <a href="#"
-                ><img class="social__footer" src="./icons/youtube.svg" alt="youtube"
+                ><img
+                  class="social__footer"
+                  src="./icons/youtube.svg"
+                  alt="youtube"
               /></a>
             </div>
           </div>
@@ -606,19 +1263,17 @@
             <button class="btn btn_white">Předplatné</button>
           </div>
         </div>
-        <hr class="white__line line">
-
+        <hr class="white__line line" />
       </div>
 
-        <div class="footer__copyright">
-          <h2 class="heading__h4 copyright__h4">
-            Jedná se o studentský projekt
-          </h2>
-          
-          <span class="copyright">Copyright © 2024 Azurové Právo  
-            <br>Bui Duy Quan | Václav Bárta | Tomáš Kubát | Adam Rohlíček</span>
-        </div>
-      
+      <div class="footer__copyright">
+        <h2 class="heading__h4 copyright__h4">Jedná se o studentský projekt</h2>
+
+        <span class="copyright"
+          >Copyright © 2024 Azurové Právo <br />Bui Duy Quan | Václav Bárta |
+          Tomáš Kubát | Adam Rohlíček</span
+        >
+      </div>
     </footer>
   </body>
 </html>
