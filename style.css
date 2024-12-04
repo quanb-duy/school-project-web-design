@@ -89,9 +89,9 @@ a {
 }
 
 .btn_white:hover{
-  background-color: var(--bg-color-ad);
+  background-color: var(--color-white);
   color: var(--secondary-color);
-  border-color: var(--bg-color-ad);
+  border-color: var(--color-white);
 
 }
 
@@ -181,11 +181,7 @@ text-align: center;
 }
 
 .search__field {
-  flex: 1;
-  max-width: 300px;
-  padding: 8px;
-  border-radius: 30px;
-  border: none;
+  display: none;
 }
 
 .button-header{
@@ -527,6 +523,15 @@ text-align: center;
   .all-categories .btn {
     flex: 1;
   }
+
+  .search__field {
+    display: block;
+    flex: 1;
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+  }
 }
 
 
@@ -588,6 +593,10 @@ text-align: center;
   .grid__categories .article__grid{
     flex-direction: column;
     gap: 20px;
+  }
+
+  .grid__categories .article__grid .article__img{
+    width: 100%;
   }
 
   .article__text {
