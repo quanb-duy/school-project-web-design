@@ -142,13 +142,13 @@ a {
   margin-bottom: 20px;
 }
 #logo {
-  font-family: "Jersey 10", "Roboto";
-  color: white;
-  text-align: center;
+  max-width: 220px;
+  height: auto;
 }
 
-.logo__h1 {
-  text-align: center;
+.logo_header, .box-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .navigation-bar {
@@ -311,7 +311,7 @@ a {
   align-items: flex-end;
   gap: 10px;
 }
-.author__date{
+.author__date {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -511,6 +511,7 @@ a {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
   .grid {
     grid-template-columns: repeat(2, minmax(400px, 1fr));
   }
@@ -521,6 +522,9 @@ a {
 }
 
 @media (min-width: 1200px) {
+  #logo {
+    max-width: 400px;
+  }
   #main {
     max-width: 900px;
     margin: 0 auto;
