@@ -144,6 +144,8 @@ a {
 #header {
   background-color: var(--secondary-color);
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .logo_header,
@@ -152,13 +154,8 @@ a {
   justify-content: center;
 }
 
-#header {
-  position: sticky;
-  top: 0;
-} 
 .navigation-bar {
   min-height: 90px;
-
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
