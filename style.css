@@ -514,7 +514,7 @@ a {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #logo {
-    max-width: 300px;
+    transform: scale(130%);
 
   }
   .grid {
@@ -528,7 +528,7 @@ a {
 
 @media (min-width: 1200px) {
   #logo {
-    max-width: 400px;
+    transform: scale(140%);
   }
   #main {
     max-width: 900px;
