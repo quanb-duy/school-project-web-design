@@ -100,6 +100,11 @@ a {
   font-size: 14px;
 }
 
+#logo {
+  max-width: 220px;
+  height: auto;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 1200px) {
@@ -141,10 +146,7 @@ a {
   background-color: var(--secondary-color);
   margin-bottom: 20px;
 }
-#logo {
-  max-width: 220px;
-  height: auto;
-}
+
 
 .logo_header, .box-logo {
   display: flex;
@@ -511,7 +513,10 @@ a {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  #logo {
+    max-width: 300px;
 
+  }
   .grid {
     grid-template-columns: repeat(2, minmax(400px, 1fr));
   }
