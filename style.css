@@ -142,7 +142,6 @@ a {
 /* header */
 
 #header {
-  min-height: 90px;
   background-color: var(--secondary-color);
   margin-bottom: 20px;
 }
@@ -153,7 +152,13 @@ a {
   justify-content: center;
 }
 
+#header {
+  position: sticky;
+  top: 0;
+} 
 .navigation-bar {
+  min-height: 90px;
+
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
