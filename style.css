@@ -145,8 +145,7 @@ a {
   background-color: var(--secondary-color);
   margin-bottom: 20px;
   position: sticky;
-  top: -1px;
-  mar
+  top: 0;
 }
 
 .logo_header,
@@ -227,7 +226,7 @@ a {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 111;
 }
 
 #menuToggle .hamburger__icon {
@@ -237,15 +236,15 @@ a {
   margin-top: 5px;
   position: relative;
   background: var(--color-white);
-  z-index: 1;
+  z-index: 110;
 }
 
 #menu {
   position: absolute;
   max-width: 400px;
   width: 100vw;
-  height: 100vh;
-  margin: -58px 0 0 -50px;
+  height: 102vh;
+  margin: -62px 0 0 -50px;
   padding: 50px;
   padding-top: 85px;
   box-sizing: border-box;
@@ -267,6 +266,9 @@ a {
 
 #menuToggle .hamburger__checkbox:checked ~ .nav-header {
   transform: translate(0, 0);
+}
+.nav-header {
+  z-index: 20;
 }
 
 /* MAIN */
